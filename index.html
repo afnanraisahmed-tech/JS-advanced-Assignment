@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Advanced Assignment — IDE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">JS</div>
+        <div class="brand-text">
+          <div class="brand-title">Advanced Assignment</div>
+          <div class="brand-sub">10 Questions · app.js</div>
+        </div>
+      </div>
+
+      <div class="search-wrap">
+        <input id="search" class="search" type="search" placeholder="Search questions…  (Ctrl+K)" autocomplete="off" spellcheck="false" />
+      </div>
+
+      <nav class="qlist" id="qlist" aria-label="Questions"></nav>
+
+      <div class="sidebar-foot">
+        <div class="stat"><span id="stat-run">0</span><small>run</small></div>
+        <div class="stat"><span id="stat-total">0</span><small>total</small></div>
+      </div>
+    </aside>
+
+    <!-- Mobile backdrop -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <!-- Main content -->
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="menu-btn" type="button" aria-label="Toggle sidebar">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+
+        <div class="file-tab">
+          <svg viewBox="0 0 24 24" width="14" height="14"><path d="M4 4h10l4 4v12H4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span>app.js</span>
+        </div>
+
+        <div class="topbar-actions">
+          <button class="btn ghost" id="clear-btn" type="button">Clear</button>
+          <button class="btn primary" id="run-all" type="button" title="Ctrl + Enter">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M6 4l14 8-14 8z" fill="currentColor"/></svg>
+            <span>Run all</span>
+          </button>
+        </div>
+      </header>
+
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
